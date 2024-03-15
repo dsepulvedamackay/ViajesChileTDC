@@ -1,0 +1,14 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+.navbar{
+    margin-bottom: -100px;
+}
+
+.hero-img{
+    display: block;
+    height: 100vh;
+    background-size: cover;
+}
