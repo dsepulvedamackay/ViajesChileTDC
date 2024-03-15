@@ -73,25 +73,28 @@
         </div>
     </section>
 
+
+    <!--Sección quiénes somos que se oculta en pantallas pequeñas. Tiene Tooltips en los íconos.-->
+
     <section id="quienes-somos-section" class="quienes-somos container py-5 d-none d-md-block">
         <h2 class="text-light text-center py-3">¿QUIÉNES SOMOS?</h2>
         <hr class="text-light py-3">
         <div class="row">
             <div class="col col-4 text-light container-fluid">
                 <div class="d-flex mx-auto py-2 bg-primary d-flex justify-content-center">
-                    <i class="fa-solid fa-plane fa-2x"></i>
+                    <i class="fa-solid fa-plane fa-2x" data-bs-toggle="tooltip" data-bs-placement="top" title="Viaja por Chile"> </i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique. Vestibulum non ligula pulvinar, aliquam mi at, tristique nulla. Nullam id lorem eu sapien ultrices elementum sed at dui. Nulla non libero nec orci porta imperdiet id id augue. Sed accumsan elit est, at tempor felis aliquet quis. Nullam rutrum volutpat ante, luctus consequat erat bibendum ut. Sed pellentesque laoreet ligula vitae semper. Curabitur id augue dolor. Suspendisse non elit justo.</p>
             </div>
             <div class="col col-4 text-light container-fluid">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique. Vestibulum non ligula pulvinar, aliquam mi at, tristique nulla. Nullam id lorem eu sapien ultrices elementum sed at dui. Nulla non libero nec orci porta imperdiet id id augue. Sed accumsan elit est, at tempor felis aliquet quis. Nullam rutrum volutpat ante, luctus consequat erat bibendum ut. Sed pellentesque laoreet ligula vitae semper. Curabitur id augue dolor. Suspendisse non elit justo.</p>
                 <div class="d-flex mx-auto py-2 bg-primary d-flex justify-content-center">
-                    <i class="fa-solid fa-mountain fa-2x"></i>
+                    <i class="fa-solid fa-mountain fa-2x" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Conoce su geografía"></i>
                 </div>
             </div>
             <div class="col col-4 text-light container-fluid">
                 <div class="d-flex mx-auto py-2 bg-primary d-flex justify-content-center">
-                    <i class="fa-solid fa-location-dot fa-2x"></i>
+                    <i class="fa-solid fa-location-dot fa-2x" data-bs-toggle="tooltip" data-bs-placement="top" title="Encuentra lugares"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique. Vestibulum non ligula pulvinar, aliquam mi at, tristique nulla. Nullam id lorem eu sapien ultrices elementum sed at dui. Nulla non libero nec orci porta imperdiet id id augue. Sed accumsan elit est, at tempor felis aliquet quis. Nullam rutrum volutpat ante, luctus consequat erat bibendum ut. Sed pellentesque laoreet ligula vitae semper. Curabitur id augue dolor. Suspendisse non elit justo.</p>
             </div>
@@ -149,6 +152,8 @@
         </div>
     </section>
 
+    
+<!--Sección contacto. Al presionar botón se muestra una alerta JS-->
 
     <section id="formulario-section" class="container py-3">
         <h2 class="text-light text-center py-3">CONTACTO</h2>
@@ -167,7 +172,7 @@
                 <textarea class="form-control" id="formGroupExampleInput3"rows="3"></textarea>
             </div>
             <div class="d-flex justify-content-start">
-                <button type="submit" class="btn btn-primary px-4">Enviar</button>
+                <button type="submit" class="btn btn-primary px-4" id="enviarCorreo">Enviar</button>
             </div>
         </div>
     </section>    
