@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/viajes.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Vidaloka&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -13,8 +15,9 @@
 
     <nav class="navbar sticky-top navbar-expand-lg ">
         <div class="container container-fluid">
-            <a class="navbar-brand col col-lg-1" href="#">
-                <h1 class="text-light text-logo">Ricomida</h1>
+            <a class="navbar-brand col col-1 d-flex" href="#">
+                <img id="logo" src="assets/img/viajes.svg" alt="">
+                <h1 class="text-light text-logo">Viajes Chile</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon navbar-dark"></span>
@@ -22,39 +25,39 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link text-light" aria-current="page" href="#hero-section">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Quienes Somos</a>
+                        <a class="nav-link text-light" href="#quienes-somos-section">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Destacados</a>
+                        <a class="nav-link text-light" href="#destacados-section">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Contacto</a>
+                        <a class="nav-link text-light" href="#formulario-section">Contacto</a>
                     </li>
                 </ul>
                 </div>
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="hero-section">
         <div class="container-fluid px-0">
             <div id="carouselHero" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="hero-img">
-                            <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="hero-img">
-                            <img src="/assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="hero-img">
-                            <img src="/assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                 </div>
@@ -70,7 +73,7 @@
         </div>
     </section>
 
-    <div class="quienes-somos container py-5 d-none d-md-block">
+    <section id="quienes-somos-section" class="quienes-somos container py-5 d-none d-md-block">
         <h2 class="text-light text-center py-3">¿QUIÉNES SOMOS?</h2>
         <hr class="text-light py-3">
         <div class="row">
@@ -93,42 +96,50 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique. Vestibulum non ligula pulvinar, aliquam mi at, tristique nulla. Nullam id lorem eu sapien ultrices elementum sed at dui. Nulla non libero nec orci porta imperdiet id id augue. Sed accumsan elit est, at tempor felis aliquet quis. Nullam rutrum volutpat ante, luctus consequat erat bibendum ut. Sed pellentesque laoreet ligula vitae semper. Curabitur id augue dolor. Suspendisse non elit justo.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="destacados container py-5">
+    <section id="destacados-section" class="container py-5 ">
         <h2 class="text-light text-center py-3">DESTACADOS</h2>
         <hr class="text-light py-3">
         <div class="row">
-            <div class="col col-3">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="/assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="container-img">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body bg-primary text-light">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique.</p>
                     </div>
                 </div>
             </div>
-            <div class="col col-3">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="/assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="container-img">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body bg-primary text-light">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique.</p>
                     </div>
                 </div>
             </div>
-            <div class="col col-3">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="/assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="container-img">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body bg-primary text-light">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique.</p>
                     </div>
                 </div>
             </div>
-            <div class="col col-3">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="/assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="container-img">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body bg-primary text-light">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris et leo rhoncus tristique.</p>
@@ -136,10 +147,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <section class="formulario container py-3">
+    <section id="formulario-section" class="container py-3">
         <h2 class="text-light text-center py-3">CONTACTO</h2>
         <hr class="text-light py-3">
         <div class="container pt-2 pb-5">
@@ -168,10 +179,10 @@
                     <h4>VIAJES CHILE</h4>
                 </div>
                 <div class="col col-6 d-flex justify-content-end">
-                    <i class="fa-brands fa-square-github fa-2x mx-2"></i>
-                    <i class="fa-brands fa-linkedin fa-2x mx-2"></i>
-                    <i class="fa-brands fa-square-twitter fa-2x mx-2"></i>
-                    <i class="fa-brands fa-square-facebook fa-2x mx-2"></i>
+                    <a href="https://github.com/"><i class="fa-brands fa-square-github fa-2x mx-2 text-light"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x mx-2 text-light"></i></a> 
+                    <a href="https://x.com"><i class="fa-brands fa-square-twitter fa-2x mx-2 text-light"></i></a> 
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook fa-2x mx-2 text-light"></i></a> 
                 </div>
             </div>
             
